@@ -1,0 +1,92 @@
+@import "compass/reset";
+@import "compass/css3";
+
+body {
+  overflow: auto;
+  background: #EEE;
+  color: #3B3835;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+  position: relative;
+  cursor: auto;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-container {
+  width: 100%;
+  background: #2D2D2D;
+  color: #D7D7D7;
+
+  .top-bar {
+    margin: 0 auto;
+    margin-bottom: 2px;
+
+    .company-name {
+      .name {
+        height: 49px;
+        margin: 0;
+        font-size: 16px;
+        h1 {
+          font-size: 1.0625rem;
+          margin: 0;
+        }
+        a {
+          color: #FFF;
+          font-weight: 500;
+          line-height: 49px;
+          padding: 0 13px 0 0;
+          position: relative;
+        }
+        img {
+          height: 36px;
+          margin: -2px 4px 0 0;
+        }
+      }
+    }
+
+    .top-bar-section {
+      display: none;
+    }
+  }
+  .sub-navbar {
+    background-color: #4D4D4D;
+    .menu-list {
+      text-align: center;
+      .menu-item {
+        display: inline-block;
+        margin-right: 45px;
+      }
+    }
+  }
+
+  .link {
+    font-size: 13px;
+    line-height: 29px;
+    color: #D7D7D7;
+    &:hover {
+      color: #008ED2;
+    }
+  }
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 62.5rem;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}

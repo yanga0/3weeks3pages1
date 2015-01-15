@@ -14,13 +14,11 @@
     <nav class="top-bar row">
         <ul class="company-name">
             <li class="name">
-                <h1>
-                    <a href="/">
-                        <img alt="SlideShare"
-                             src="http://public.slidesharecdn.com/b/images/mobile_app_promo/ios_icon.png?b5f05a27f5">
-                        slideshare
-                    </a>
-                </h1>
+                <a href="/">
+                    <img alt="SlideShare"
+                         src="http://public.slidesharecdn.com/b/images/mobile_app_promo/ios_icon.png?b5f05a27f5">
+                    slideshare
+                </a>
             </li>
         </ul>
 
@@ -76,7 +74,7 @@
                             <input name="searchfrom" type="hidden" value="header">
                             <input id="nav-search-query" type="text" placeholder="Search" name="q" value=""
                                    autocomplete="off">
-                            <button class="button expand" type="submit"><i class="fa fa-search"></i></button>
+                            <a class="button expand" type="submit"><i class="fa fa-search"></i></a>
                             <ul class="search-suggestions dropdown f-dropdown medium" style="display:none;"></ul>
                         </div>
                     </form>
@@ -99,19 +97,44 @@
         </div>
     </div>
 </div>
-<div class="main-content row">
+<div class="main-content row center">
     <h1>Create your first slideshare</h1>
-    <h2>Share a fun visual of your professional journey with just a click</h2>
+    <p class="normal center subtitle">Share a fun visual of your professional journey with just a click</p>
 
-    <div class="create-cancel-buttons">
-        <button class="create-button">Create Now</button>
-        <button class="cancel">No thanks</button>
+    <div class="create-cancel-buttons row center">
+        <a class="button create-blue"><span class="button-tag">Create Now</span></a>
+        <a class="button skip-create"><span class="button-tag">No thanks</span></a>
     </div>
-    <div class="posts-images">
-        <img class="post-mobile" src="./images/hills-mobile-scr-1x.png" alt=""/>
-        <img class="post-desktop" src="./images/hills-browser-scr-1x.png" alt=""/>
-        <img class="post-tablet" src="./images/hills-tablet-scr-1x.png" alt=""/>
+    <div class="banners">
+        <div class="left-banner"><img class="post-mobile" src="./images/hills-mobile-scr-1x.png" alt=""/>
+        </div>
+        <div class="middle-banner"><img class="post-desktop" src="./images/hills-browser-scr-1x.png" alt=""/>
+        </div>
+        <div class="right-banner"><img class="post-tablet" src="./images/hills-tablet-scr-1x.png" alt=""/>
+        </div>
     </div>
 </div>
+<div class="remaining">
+    <div class="row">
+        <div class="features">
+            <div class="tip">
+                <p class="text center">
+                    Get a new look at your key career milestones and share your Professional Journey with others
+                </p>
+            </div>
+            <div class="line-separation">&nbsp;</div>
+            <div class="steps">
+                <a class="normal step" href="#">Connect via LinkedIn<p class="small">to automatically input your data</p></a>
+                <a class="normal step" href="#">Pick a Template<p class="small">of your choice</p></a>
+                <a class="normal step" href="#">Publish Your Journey<p class="small">to SlideShare</p></a>
+            </div>
+            <a class="button create-white"><icon class=""></icon>Create Now</a>
+        </div>
+    </div>
+    <div class="row center">
+        <p class="copyright">LinkedIn Corporation © 2015</p>
+    </div>
+</div>
+<div class="cover blur"></div>
 </body>
 </html>

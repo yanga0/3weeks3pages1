@@ -55,6 +55,15 @@ p {
   border-radius: 6px;
   padding: 16px 20px;
   margin: 0;
+  opacity: 0.9;
+  &:hover {
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
 }
 .cover {
   background: url(../images/VeronaDusk_ZH-CN8191043232_1920x1080.jpg);
@@ -66,11 +75,11 @@ p {
 }
 
 .blur {
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
+  -webkit-filter: blur(6px);
+  -moz-filter: blur(6px);
+  -o-filter: blur(6px);
+  -ms-filter: blur(6px);
+  filter: blur(6px);
 }
 
 .nav-container {
@@ -219,6 +228,7 @@ p {
     .skip-create {
       background: rgba(255, 255, 255, 0.1);
       border: 2px solid white;
+      padding: 14px;
     }
     .create-tag {
       font-size: 21px;
@@ -275,7 +285,7 @@ p {
       padding-top: 20px;
       margin-left: auto;
       margin-right: auto;
-      width: 50px;
+      width: 40px;
       line-height: 18px;
       border-bottom: 1px solid #555;
     }

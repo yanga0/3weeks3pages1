@@ -246,12 +246,13 @@ p {
         width: 300px;
         display: inline-block;
         text-align: center;
-
         & + .step {
           margin-left: 20px;
-          &:before {
-            content: '\e803';
-          }
+        }
+        i {
+          font-size: 50px;
+          display: inline;
+          line-height: 50px;
         }
         .small {
           color: #CCC;

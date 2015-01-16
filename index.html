@@ -7,18 +7,32 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link href="stylesheets/style.css" type="text/css" rel="stylesheet">
+    <link href="css/animation.css" type="text/css" rel="stylesheet">
+    <link href="css/fontello.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 <div id="main-nav" class="nav-container fixed">
     <!-- Main nav -->
     <nav class="top-bar row">
-        <ul class="company-name">
+        <ul class="logo-search">
             <li class="name">
                 <a href="/">
                     <img alt="SlideShare"
                          src="http://public.slidesharecdn.com/b/images/mobile_app_promo/ios_icon.png?b5f05a27f5">
                     slideshare
                 </a>
+            </li>
+            <li class="divider"></li>
+            <li id="nav-search" class="has-form">
+                <form id="nav-search-form" method="get" action="#">
+                    <div class="input-box">
+                        <input name="searchfrom" type="hidden" value="header">
+                        <input id="nav-search-query" type="text" placeholder="Search" name="q" value=""
+                               autocomplete="off">
+                        <a class="button expand" type="submit"><i class="fa fa-search"></i></a>
+                        <ul class="search-suggestions dropdown f-dropdown medium" style="display:none;"></ul>
+                    </div>
+                </form>
             </li>
         </ul>
 
@@ -63,23 +77,6 @@
                     </ul>
                 </li>
             </ul>
-
-            <!-- Left Nav Section -->
-
-            <ul class="left">
-                <li class="divider"></li>
-                <li id="nav-search" class="has-form">
-                    <form id="nav-search-form" method="get" action="/search/slideshow">
-                        <div class="input-box">
-                            <input name="searchfrom" type="hidden" value="header">
-                            <input id="nav-search-query" type="text" placeholder="Search" name="q" value=""
-                                   autocomplete="off">
-                            <a class="button expand" type="submit"><i class="fa fa-search"></i></a>
-                            <ul class="search-suggestions dropdown f-dropdown medium" style="display:none;"></ul>
-                        </div>
-                    </form>
-                </li>
-            </ul>
         </section>
     </nav>
 
@@ -102,8 +99,8 @@
     <p class="normal center subtitle">Share a fun visual of your professional journey with just a click</p>
 
     <div class="create-cancel-buttons row center">
-        <a class="button create-blue"><span class="button-tag">Create Now</span></a>
-        <a class="button skip-create"><span class="button-tag">No thanks</span></a>
+        <a class="button create-blue"><span class="create-tag"><i class="icon-linkedin"></i>Create Now</span></a>
+        <a class="button skip-create"><span class="cancel-tag">No thanks</span></a>
     </div>
     <div class="banners">
         <div class="left-banner"><img class="post-mobile" src="./images/hills-mobile-scr-1x.png" alt=""/>
@@ -128,10 +125,12 @@
                 <a class="normal step" href="#">Pick a Template<p class="small">of your choice</p></a>
                 <a class="normal step" href="#">Publish Your Journey<p class="small">to SlideShare</p></a>
             </div>
-            <a class="button create-white"><icon class=""></icon>Create Now</a>
+            <div class="create-now">
+                <a class="button create-white"><i class="icon-linkedin-squared"></i>Create Now</a>
+            </div>
         </div>
     </div>
-    <div class="row center">
+    <div class="footer row center">
         <p class="copyright">LinkedIn Corporation © 2015</p>
     </div>
 </div>

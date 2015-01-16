@@ -18,65 +18,27 @@
             <li class="name">
                 <a href="/">
                     <img alt="SlideShare"
-                         src="http://public.slidesharecdn.com/b/images/mobile_app_promo/ios_icon.png?b5f05a27f5">
+                         src="images/ios_icon.png">
                     slideshare
                 </a>
             </li>
             <li class="divider"></li>
-            <li id="nav-search" class="has-form">
+            <li class="nav-search">
                 <form id="nav-search-form" method="get" action="#">
                     <div class="input-box">
-                        <input name="searchfrom" type="hidden" value="header">
-                        <input id="nav-search-query" type="text" placeholder="Search" name="q" value=""
-                               autocomplete="off">
-                        <a class="button expand" type="submit"><i class="fa fa-search"></i></a>
-                        <ul class="search-suggestions dropdown f-dropdown medium" style="display:none;"></ul>
+                        <input class="nav-search-query" type="text" placeholder="Search" value="">
+                        <a class="icon-button" type="submit"><i class="icon-search"></i></a>
                     </div>
                 </form>
             </li>
         </ul>
 
-        <section class="top-bar-section">
-
-            <!-- Right Nav Section -->
-
-            <ul class="right upload-create button-group">
-
-                <li class="has-form upload-create">
-                    <a href="/upload" class="button radius secondary">Upload</a>
-                    <a href="/create?via=navbar_foundation"
-                       class="button radius secondary create hide-for-small has-tip tip-bottom"
-                       data-ga-action="navbar_foundation" data-ga-cat="create_cta" data-ga-label="click"
-                       title="Create beautiful presentations"><img alt="Hd-icn"
-                                                                   src="//public.slidesharecdn.com/b/images/ss-foundation/hd-icn.svg?cb=da34ec97eeef8936368e19178b015bc5954e0441"></a>
-                </li>
-
-                <!-- User/Account -->
-
-                <li class="has-dropdown not-click">
-                    <a href="/YanGao10" class="user-image">
-                        <img class="radius" src="//cdn.slidesharecdn.com/profile-photo-YanGao10-48x48.jpg?cb=1421164250"
-                             alt="Yan Gao">
-                    </a>
-                    <ul class="dropdown f-dropdown f-dropdown-right">
-                        <li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
-                        <li class="parent-link show-for-small"><a class="parent-link js-generated" href="/YanGao10">
-                            <img class="radius"
-                                 src="//cdn.slidesharecdn.com/profile-photo-YanGao10-48x48.jpg?cb=1421164250"
-                                 alt="Yan Gao">
-                        </a></li>
-                        <li><a href="/YanGao10">Yan Gao</a></li>
-                        <li class="divider"></li>
-                        <li><a href="/YanGao10/edit_my_uploads">My uploads</a></li>
-                        <li class="divider"></li>
-                        <li><a href="/YanGao10/edit_sharing_settings">Account settings</a></li>
-                        <li class="divider"></li>
-                        <li><a href="/insight">Analytics</a></li>
-                        <li class="divider"></li>
-                        <li><a href="https://www.slideshare.net/logout">Logout</a></li>
-                    </ul>
-                </li>
-            </ul>
+        <section class="top-bar-right">
+            <a class="upload-button button-small" href="#">Upload</a>
+            <a class="create-new-beautiful button-small" href="#"><i class="icon-search-1"></i></a>
+            <div class="user-info">
+                <a class="user-avatar" href="#"><img src="images/avatar.jpeg" alt=""/></a>
+            </div>
         </section>
     </nav>
 
@@ -122,9 +84,9 @@
             <div class="line-separation">&nbsp;</div>
             <div class="steps">
                 <a class="normal step" href="#">Connect via LinkedIn<p class="small">to automatically input your data</p></a>
-                <i class="icon-angle-right"></i>
+                <div class="angle-right"></div>
                 <a class="normal step" href="#">Pick a Template<p class="small">of your choice</p></a>
-                <i class="icon-angle-right"></i>
+                <div class="angle-right"></div>
                 <a class="normal step" href="#">Publish Your Journey<p class="small">to SlideShare</p></a>
             </div>
             <div class="create-now">

@@ -224,6 +224,7 @@ p {
   display: inline-block;
   line-height: 48px;
   color: #ffffff;
+  float: right;
 }
 /* line 146, ../sass/style.scss */
 .nav-container .top-bar .top-bar-right .button-small {

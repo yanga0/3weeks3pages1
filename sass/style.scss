@@ -25,7 +25,7 @@ h1 {
   text-align: center;
 }
 
-a {
+a, a:visited {
   text-decoration: none;
   cursor: pointer;
 }
@@ -83,8 +83,11 @@ p {
     margin-bottom: 2px;
 
     .logo-search {
-      display: inline-block;
+      display: inline;
       width: 128px;
+      li {
+        display: inherit;
+      }
       .name {
         height: 49px;
         margin: 0;
@@ -108,15 +111,61 @@ p {
         }
       }
       .divider {
-        line-height: 50px;
-        width: 20px;
-        border-left: 1px solid ;
-        color: #CCC;
+        font-size: 12px;
+        border-left: 1px solid #555;
+      }
+      .nav-search {
+        width: 253px;
+        display: inline-block;
+        margin-left: 15px;
+
+        input.nav-search-query {
+          width: 204px;
+          padding: 2px 22px 2px 5px;
+          color: #ffffff;
+          background: #555;
+          border-radius: 3px;
+          line-height: 23px;
+          border: none;
+        }
+
+        .icon-button {
+          position: relative;
+          left: -27px;
+          font-size: 12px;
+        }
       }
     }
 
-    .top-bar-section {
-      display: none;
+    .top-bar-right {
+      display: inline-block;
+      line-height: 48px;
+      color: #ffffff;
+//      float: right;
+
+      .button-small {
+        color: #ffffff;
+        font-size: 13px;
+        background: #E48126;
+        border-radius: 3px;
+        padding: 6px 12px;
+        margin: 0;
+      }
+      .create-new-beautiful {
+        margin-left: 2px;
+      }
+      .user-info {
+        margin-left: 16px;
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        position: relative;
+        bottom: -10px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
   }
   .sub-navbar {
@@ -243,16 +292,11 @@ p {
       width: 950px;
       margin-top: 50px;
       .step {
-        width: 300px;
+        width: 30%;
         display: inline-block;
         text-align: center;
         & + .step {
           margin-left: 20px;
-        }
-        i {
-          font-size: 50px;
-          display: inline;
-          line-height: 50px;
         }
         .small {
           color: #CCC;
@@ -261,6 +305,18 @@ p {
           letter-spacing: 0.08em;
           line-height: 24px;
         }
+      }
+      .angle-right {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border-top: 1px solid #555;
+        border-right: 1px solid #555;
+        transform:rotate(45deg);
+        -ms-transform:rotate(45deg); 	/* IE 9 */
+        -moz-transform:rotate(45deg); 	/* Firefox */
+        -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+        -o-transform:rotate(45deg); 	/* Opera */
       }
     }
     .create-now {
